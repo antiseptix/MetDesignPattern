@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="afeda507-c908-45a9-8fc0-60285a728f06"
+  name="Package1" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="38b54d00-8364-4825-a82f-726497286313">
+      <body>Dans la methode CreationChat de Arme
+Chat c = this.clone();
+c.nbTete(2);</body>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="b5e82553-7702-4628-8f55-48a66eab8b5b"
+        name="Chat"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="8dd72122-23d3-4a3d-9d39-5ff69f9a7896"
+            name="tete"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="d872a9aa-6b1c-45d6-a26c-14dc15e57fd3"
+                LastKnownName="int"
+                LastKnownLocation="Package_1449.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="869a83d1-f897-4fd2-9600-16eedce98619"
+            name="clone"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="429ba246-844c-433c-aaef-d02adc6d9ff4"
+        name="Corps"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="9374622b-59a3-4c7e-a416-3c8a94dff9d9"
+        name="ChatDeuxTete"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="e44ee54e-8373-41a7-9c88-cc9367d9c10d"
+            isSubstitutable="false">
+            <classMoniker
+              Id="b5e82553-7702-4628-8f55-48a66eab8b5b"
+              LastKnownName="Chat"
+              LastKnownLocation="Package_1449.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="2f5d2946-1ea4-433e-a726-51eaf84902eb"
+            name="clone"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="6752edbf-aae0-477d-9dfe-1d77637125be"
+        name="Armee"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="d3e08b97-3aa0-4534-ac19-72f919bcff45"
+            isDerived="false"
+            sourceEndRoleName="Armee"
+            targetEndRoleName="ChatSoldat"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="b5e82553-7702-4628-8f55-48a66eab8b5b"
+              LastKnownName="Chat"
+              LastKnownLocation="Package_1449.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2b4f9b55-2d5c-447e-90bf-3b5598a4bff3"
+                  name="Armee"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3bc9cf9a-eb1a-4f05-95e9-7b2e4edbde60"
+                  name="ChatSoldat"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="7d49c2ea-afc0-4229-853f-6f8351a0ea61"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="6cf925ea-a4c2-4329-aca2-782bd5aa7152"
+                      name="Upper"
+                      value="0" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="59d1bd08-bd8f-4ee3-8423-d4b87159ce43"
+            name="instance"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="11d10873-28e0-45f3-ad3d-b1198de13131"
+            name="getInstance"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="1d563155-724e-4191-88fe-834fc3709d16"
+            name="Arme"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="75f1f37e-9d16-428f-a53a-d081f52fd889"
+            name="CreationChat"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="d872a9aa-6b1c-45d6-a26c-14dc15e57fd3"
+        name="int" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

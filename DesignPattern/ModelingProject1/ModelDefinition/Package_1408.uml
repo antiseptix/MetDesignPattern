@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="689ff0c1-ea55-4b18-b35c-a6749586300a"
+  name="Salde de base" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="6c52c355-80d3-437e-a53a-50024e55740c"
+        name="Salade"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="682988e7-5fc8-4add-bb2c-96c2116fb2d2"
+            isSubstitutable="false">
+            <classMoniker
+              Id="1d3438e9-8a48-489c-a898-9e97145a217a"
+              LastKnownName="ABSFruit"
+              LastKnownLocation="Package_1408.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="1f92848e-c42e-47b1-bd64-779f8d70f38f"
+            isDerived="false"
+            sourceEndRoleName="Salade"
+            targetEndRoleName="Fruit"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="1d3438e9-8a48-489c-a898-9e97145a217a"
+              LastKnownName="ABSFruit"
+              LastKnownLocation="Package_1408.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ce408e1b-645c-429e-9fef-dc8b23fc4474"
+                  name="Salade"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7e1b803a-747b-4fa0-b7f6-e8cbd7d03b2e"
+                  name="Fruit"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="c64f33ca-1a01-40a7-9d25-7e83fa91facd"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="7bf576d5-260c-4966-b73a-1bade6e7372e"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="0d1fc4ae-a26c-4565-9420-0a90fde15403"
+        name="Banane"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="317e636e-01fb-4e0e-a189-f461a70a560a"
+            isSubstitutable="false">
+            <classMoniker
+              Id="1d3438e9-8a48-489c-a898-9e97145a217a"
+              LastKnownName="ABSFruit"
+              LastKnownLocation="Package_1408.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="796dd8b4-3f66-4501-8d56-123c481bfce7"
+        name="Fraise"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="9abaf7f5-04b4-48f9-a0e9-7567071d77af"
+            isSubstitutable="false">
+            <classMoniker
+              Id="1d3438e9-8a48-489c-a898-9e97145a217a"
+              LastKnownName="ABSFruit"
+              LastKnownLocation="Package_1408.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="1d3438e9-8a48-489c-a898-9e97145a217a"
+        name="ABSFruit"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

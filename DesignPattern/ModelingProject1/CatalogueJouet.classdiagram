@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="b968d06f-8cee-4c76-8ad2-56ac7c851d54" name="CatalogueJouet" linkedPackageId="a2bc8881-f4e5-4346-b46d-b6af8ba91d15" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="e57e071a-1f07-419f-ab64-8ac66bdd1971">
+      <profileInstance Id="cae1f489-e49d-4d4b-8e32-823269805613" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="913d58e5-a86d-4fc4-8a7c-2f994e41922c">
+      <profileInstance Id="c2c99df3-1f25-4462-952d-4b2b71acbb25" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="ec27aa5d-45a2-49d3-862e-a793b0e201de" name="Flyweight">
+        <elementDefinition Id="5bf50ac8-8c0b-4dcd-84c7-2f342c6faa37" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="511d9be1-428c-4412-9f6c-26d1428e9636" name="Jouet" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="05590334-7e4d-41cd-9892-32a55274ea96" />
+              <ownedOperationsInternal>
+                <operation Id="ae83ee4d-a9d8-4748-826b-2bb1855c9651" name="Affiche" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="f2d05aba-f115-4c12-8bcd-57d24132d4db" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="404de221-63ff-4bb2-9128-58cae107d53d" name="Monopoly" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="44d52941-acb3-468c-88e7-763c59f37193" />
+              <generalsInternal>
+                <generalization Id="16b42fd9-5bb9-4fa3-90df-2aa4aa99500e" isSubstitutable="false">
+                  <classMoniker Id="511d9be1-428c-4412-9f6c-26d1428e9636" LastKnownName="Jouet" />
+                  <elementDefinition Id="2f0f2666-aeb5-4814-91a3-fec9075beecf" />
+                </generalization>
+              </generalsInternal>
+              <ownedOperationsInternal>
+                <operation Id="4f2eb09f-6135-49ca-a0de-1baab3adf144" name="Affiche" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="b03c2fe3-9df3-42f4-9198-be4915551218" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="2cc7de2d-0c89-4c5d-a7e8-cdf2e0acab56" name="Ballon" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="85b340b7-3afb-41f9-8d5a-a63af1f8358a" />
+              <generalsInternal>
+                <generalization Id="70e6b7f4-1d84-4302-b187-816df05552a2" isSubstitutable="false">
+                  <classMoniker Id="511d9be1-428c-4412-9f6c-26d1428e9636" LastKnownName="Jouet" />
+                  <elementDefinition Id="d5bcf0f4-ee1d-42db-ac53-6112b1e9bf08" />
+                </generalization>
+              </generalsInternal>
+              <ownedOperationsInternal>
+                <operation Id="caf922b2-e644-42e1-98c8-43c5f3533112" name="Affiche" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="97ed1a0b-815b-47a1-ad48-a0bfdac7540a" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="29cb2409-83be-4eb9-8d06-b37511dba2a4" name="Cerf-volant" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="0037cebe-d534-49d8-9d11-a43dc03bf8be" />
+              <generalsInternal>
+                <generalization Id="1232eabe-7b85-43bd-9416-20825225be8b" isSubstitutable="false">
+                  <classMoniker Id="511d9be1-428c-4412-9f6c-26d1428e9636" LastKnownName="Jouet" />
+                  <elementDefinition Id="5cdca26a-6ecd-4fc7-99d4-ca37a3eb0b86" />
+                </generalization>
+              </generalsInternal>
+              <ownedOperationsInternal>
+                <operation Id="b1ab018b-07a0-4f53-9955-e7e1292be634" name="Affiche" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="bcd0b534-8df5-4699-9731-3972f5b58ccd" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="ca67412f-c63a-4bb8-9626-5482bfb1c7c1" name="FactoryJouet" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="f802493e-a076-4b2e-bcb9-0037066b8794" />
+              <targetEnds>
+                <association Id="32778bc8-e73a-4e81-88ca-1093c3f526fc" isDerived="false" sourceEndRoleName="FactoryJouet" targetEndRoleName="Jouet" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="511d9be1-428c-4412-9f6c-26d1428e9636" LastKnownName="Jouet" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="1f0d9ab9-9471-4072-876a-d1cce8fadb3c" name="FactoryJouet" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="2883ebe5-f636-491a-848d-c1e9e88a7f0d" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="8daa67ef-8d2b-4535-85ff-a9c92631c6f4" name="Jouet" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <elementDefinition Id="32a4bd57-9e73-47b4-9dfc-f20a5379ef5f" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="1d28b5df-449b-4044-84e4-8dc0bbd4ebcb" />
+                </association>
+              </targetEnds>
+              <ownedAttributesInternal>
+                <property Id="9f892ef9-c449-43fd-bfdb-06265636e6ba" name="DictonaryJouet" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="dd647707-d4cc-452a-b9d3-b66e624f47da" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="343f669a-71ff-4094-9dad-6fe688725288" LastKnownName="dictionary" />
+                  </type_NamedElement>
+                </property>
+              </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="a9e230d0-1db3-4c65-b664-070e21165667" name="getJouet" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="d7477791-7b8b-491a-95fa-81503a4b2144" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="7e711192-ff2d-4b0d-8181-8b5727a7c9fe" name="type" direction="In" isUnique="false">
+                        <elementDefinition Id="1fe39ccf-c9b9-4a73-9d4e-50966a5eca8b" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="8aea6c94-076c-42d3-9242-366c7349eb2c" LastKnownName="string" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="a422b631-4eb5-4c81-8db4-7c18067b655f" direction="Return" isUnique="false">
+                        <elementDefinition Id="d1f28961-a295-4fdd-a35d-2c3750353272" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="a6b73147-7232-46b3-a78a-3103c2ca07e9" LastKnownName="Jouet" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <packageHasNamedElement>
+      <referencedType Id="343f669a-71ff-4094-9dad-6fe688725288" name="dictionary" isAbstract="false" isLeaf="false" cachedFullName="dictionary">
+        <elementDefinition Id="cb037b64-7a29-4e85-a737-0ba6e09084ff" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="8aea6c94-076c-42d3-9242-366c7349eb2c" name="string" isAbstract="false" isLeaf="false" cachedFullName="string">
+        <elementDefinition Id="4cf2ea6a-335a-4d1d-9832-5b19a65cdd61" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="a6b73147-7232-46b3-a78a-3103c2ca07e9" name="Jouet" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::Flyweight::Jouet">
+        <elementDefinition Id="05590334-7e4d-41cd-9892-32a55274ea96" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="a2bc8881-f4e5-4346-b46d-b6af8ba91d15" name="ModelingProject1">
+    <elementDefinition Id="a414921e-2ba1-4b08-a82e-a381a1b26c96" />
+  </package>
+</logicalClassDesignerModel>

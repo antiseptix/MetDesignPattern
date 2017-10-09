@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="ef61189f-531d-442b-b51b-63a02a1f84ea" name="Fruit" linkedPackageId="fa7256c7-959b-46b2-9ba8-a25559d0c8f6" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="13e55b9c-46ac-4594-b855-0eca8a5e24c2" name="Salde de base">
+        <elementDefinition Id="689ff0c1-ea55-4b18-b35c-a6749586300a" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="766ab55b-d950-4b00-a67f-7527fa0b7bd0" name="Salade" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="6c52c355-80d3-437e-a53a-50024e55740c" />
+              <generalsInternal>
+                <generalization Id="6ad0ee55-1de3-4981-8837-2627f714cebf" isSubstitutable="false">
+                  <classMoniker Id="29721194-148a-4d39-a656-90f30f7ec6fd" LastKnownName="ABSFruit" />
+                  <elementDefinition Id="682988e7-5fc8-4add-bb2c-96c2116fb2d2" />
+                </generalization>
+              </generalsInternal>
+              <targetEnds>
+                <association Id="f613ef14-76f9-4c41-b401-ab1033086833" isDerived="false" sourceEndRoleName="Salade" targetEndRoleName="Fruit" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="29721194-148a-4d39-a656-90f30f7ec6fd" LastKnownName="ABSFruit" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="b7eb79a6-820c-43f6-b1e4-9b0fecb7b2f1" name="Salade" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="ce408e1b-645c-429e-9fef-dc8b23fc4474" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="da0ccc02-9394-4883-ad39-23b6463cedba" name="Fruit" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                        <lowerValueInternal>
+                          <literalString Id="2f367fa7-f74f-4088-810e-60848debe8dd" name="Lower" value="*">
+                            <elementDefinition Id="c64f33ca-1a01-40a7-9d25-7e83fa91facd" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="38727546-2342-4d6f-9386-8fe1201dca9f" name="Upper" value="1">
+                            <elementDefinition Id="7bf576d5-260c-4966-b73a-1bade6e7372e" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="7e1b803a-747b-4fa0-b7f6-e8cbd7d03b2e" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="1f92848e-c42e-47b1-bd64-779f8d70f38f" />
+                </association>
+              </targetEnds>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="3a396668-629c-45d5-8fca-31775769208a" name="Banane" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="0d1fc4ae-a26c-4565-9420-0a90fde15403" />
+              <generalsInternal>
+                <generalization Id="a9d10011-0d83-400e-8796-2ecb273e8a91" isSubstitutable="false">
+                  <classMoniker Id="29721194-148a-4d39-a656-90f30f7ec6fd" LastKnownName="ABSFruit" />
+                  <elementDefinition Id="317e636e-01fb-4e0e-a189-f461a70a560a" />
+                </generalization>
+              </generalsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="b17c4cdf-772e-459e-b180-c1521c97b9b6" name="Fraise" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="796dd8b4-3f66-4501-8d56-123c481bfce7" />
+              <generalsInternal>
+                <generalization Id="61ad7677-495e-4f7a-9894-232662e0d773" isSubstitutable="false">
+                  <classMoniker Id="29721194-148a-4d39-a656-90f30f7ec6fd" LastKnownName="ABSFruit" />
+                  <elementDefinition Id="9abaf7f5-04b4-48f9-a0e9-7567071d77af" />
+                </generalization>
+              </generalsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="29721194-148a-4d39-a656-90f30f7ec6fd" name="ABSFruit" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="1d3438e9-8a48-489c-a898-9e97145a217a" />
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="971cc35a-2b3a-4784-9865-5db749606f94" name="Salde de saison">
+        <ownedCommentsInternal>
+          <comment Id="42e41f6a-02c0-4fbd-86d1-976baf1592e3">
+            <elementDefinition Id="aa26c93e-71a7-4dcf-a3d4-fc0f450db64c" />
+            <body>ABSFruitFactory AFF = new FabriqueSaladeVitamine();
+ABSFruit F = AFF.CreateFruit("Orange");
+ABSFruit F2 = AFF.CreateFruit("Peche");</body>
+          </comment>
+        </ownedCommentsInternal>
+        <elementDefinition Id="f312124f-ab20-4bda-ae41-7868a9b40b0b" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="409a9d44-6357-461f-b0f3-d5dc4252de76" name="FabriqueSaladeVitamine" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="d9a15438-00f5-460b-acb3-083a63375c43" />
+              <suppliersInternal>
+                <dependency Id="9e4a83ac-c6e7-4be3-bfe7-1bdebc57ae00">
+                  <classMoniker Id="92608d26-53cb-4826-b007-b10de2e72060" LastKnownName="Orange" />
+                  <elementDefinition Id="f301c2a5-3775-4b47-8384-95cb5162161b" />
+                </dependency>
+              </suppliersInternal>
+              <generalsInternal>
+                <generalization Id="b78fa8f9-5283-48ce-a727-ccc4558e2910" isSubstitutable="false">
+                  <classMoniker Id="a434669f-53bc-4dac-8370-3bac4401c861" LastKnownName="ABSSaladeSaison" />
+                  <elementDefinition Id="4af3e8c7-2440-4c15-ab9f-c5df0a5a5104" />
+                </generalization>
+              </generalsInternal>
+              <ownedOperationsInternal>
+                <operation Id="4384bae7-3380-41f4-8e7e-21675dc83652" name="create" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="f6a873ee-0dfb-43aa-a3f5-6ffbfab57f17" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="96a2104d-3674-44d2-ab4d-2c38f75bfaef" direction="Return" isUnique="false">
+                        <elementDefinition Id="d830e932-6329-45ed-805c-a4d2e2a93fbc" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="d5c9cb6a-9e62-4d35-96be-f522e6e14c0d" LastKnownName="class" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="6274f9dc-7f18-401f-b1b5-dd20aec8055e" name="param" direction="In" isUnique="false">
+                        <elementDefinition Id="2fdc9ae5-fbf4-4a10-a907-1be0e59d3357" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="f3a99e04-fb4d-436d-80d0-e826e14fd343" name="FabriqueSaladeRafraichissante" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="f4df2645-397a-4c4b-b8b6-329cab4f1007" />
+              <suppliersInternal>
+                <dependency Id="96c354b8-a37b-43e1-a137-b2323ac4dee8">
+                  <classMoniker Id="ba0fcf51-cf29-4b39-9006-48c73abb0608" LastKnownName="Banane" />
+                  <elementDefinition Id="33b3a394-472e-4e18-b62c-85d9ad76a5f8" />
+                </dependency>
+                <dependency Id="cee6a097-e2ff-45fe-a148-1e80eb0d8e25">
+                  <classMoniker Id="34cacad5-2582-4379-95ce-efed62513d59" LastKnownName="Mandarine" />
+                  <elementDefinition Id="05e36499-6429-41d9-ab23-b6b0434f9f60" />
+                </dependency>
+              </suppliersInternal>
+              <generalsInternal>
+                <generalization Id="efe3de34-404a-4e76-9b13-b13e43dddf80" isSubstitutable="false">
+                  <classMoniker Id="a434669f-53bc-4dac-8370-3bac4401c861" LastKnownName="ABSSaladeSaison" />
+                  <elementDefinition Id="b6a4683a-bba2-4562-8f9a-d76bbbfbb26a" />
+                </generalization>
+              </generalsInternal>
+              <ownedOperationsInternal>
+                <operation Id="cf7f90d6-6087-44de-9a05-2718be17fd1f" name="create" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="d6d83f95-771c-4bed-81a1-3415753538a3" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="66815f05-17f6-4384-a038-c63c2c4404d6" direction="Return" isUnique="false">
+                        <elementDefinition Id="7fa4c1f5-1662-4cf5-8d9e-31310e61acaa" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="d5c9cb6a-9e62-4d35-96be-f522e6e14c0d" LastKnownName="class" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="bbf8fd12-4c61-4dad-a09d-33df9c9df8fc" name="param" direction="In" isUnique="false">
+                        <elementDefinition Id="6ed67660-4d51-4e80-b8a9-dd2014adcc1e" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="a434669f-53bc-4dac-8370-3bac4401c861" name="ABSSaladeSaison" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="8e8ba7ec-555a-432a-918b-51ecd46c2fa7" />
+              <ownedOperationsInternal>
+                <operation Id="310e12fd-4cfe-45f4-90fb-7b861a53c0b9" name="create" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="5cc733a7-5785-4902-82ef-71d73c69e38e" />
+                  <ownedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="d440fcb0-1746-4acc-a996-4a6d78354c3d" direction="Return" isUnique="false">
+                        <elementDefinition Id="20606141-740c-4e0b-8156-07b41cf11c01" />
+                        <type_NamedElement>
+                          <referencedTypeMoniker Id="d5c9cb6a-9e62-4d35-96be-f522e6e14c0d" LastKnownName="class" />
+                        </type_NamedElement>
+                      </parameter>
+                    </operationHasOwnedParameters>
+                    <operationHasOwnedParameters>
+                      <parameter Id="61640f07-2d64-4a56-9ef9-f49a7b64b96c" name="param" direction="In" isUnique="false">
+                        <elementDefinition Id="ac7b800f-e8c7-4493-9d17-fed37da8483f" />
+                      </parameter>
+                    </operationHasOwnedParameters>
+                  </ownedParameters>
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="cf3f1cda-5f50-4313-b405-c317b54c860f" name="Fraise" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="1633769e-e037-4266-b33a-f65b3e70e950" />
+              <generalsInternal>
+                <generalization Id="07b5156b-0633-428f-903f-80ef39aa772f" isSubstitutable="false">
+                  <classMoniker Id="0a2ced01-0462-42da-8f70-3b0a3ebe74f4" LastKnownName="FruitEte" />
+                  <elementDefinition Id="df3d8461-7915-4c7a-9d28-ac9995a9bce6" />
+                </generalization>
+              </generalsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="6a8a9670-e9bb-4eec-abd7-4634c0b8d272" name="FruitHiver" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="e0e2ec64-6dfc-468d-9c97-523442d4e419" />
+              <generalsInternal>
+                <generalization Id="bb56f53e-2610-4a28-97a2-dc72ad3c6c5a" isSubstitutable="false">
+                  <classMoniker Id="7c631bc4-1e5d-407b-af50-4ec40299e354" LastKnownName="ABSFruit" />
+                  <elementDefinition Id="47e70e2f-d885-4be3-9292-bcaf0d0fe9c6" />
+                </generalization>
+              </generalsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="0a2ced01-0462-42da-8f70-3b0a3ebe74f4" name="FruitEte" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="2566379b-dd7b-42b0-9749-ada1f8f00bbe" />
+              <generalsInternal>
+                <generalization Id="5e2cd9ff-15d8-4d46-9d40-f63b85f8b04f" isSubstitutable="false">
+                  <classMoniker Id="7c631bc4-1e5d-407b-af50-4ec40299e354" LastKnownName="ABSFruit" />
+                  <elementDefinition Id="fe15152e-bf71-4ea8-ad2f-d25076f3b58c" />
+                </generalization>
+              </generalsInternal>
+              <ownedOperationsInternal>
+                <operation Id="6bf986a7-eaf0-46e8-95b2-d50f1ce17fc5" name="createFruit" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="9b00b3b5-7763-4261-ae05-9dc239f4d25e" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="ba0fcf51-cf29-4b39-9006-48c73abb0608" name="Banane" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="e7d8eefa-550d-497c-8b0f-116e0ad656c6" />
+              <generalsInternal>
+                <generalization Id="85f1394d-f6e6-4bf9-aa6f-c46ee51680e1" isSubstitutable="false">
+                  <classMoniker Id="0a2ced01-0462-42da-8f70-3b0a3ebe74f4" LastKnownName="FruitEte" />
+                  <elementDefinition Id="61c96d88-259e-4097-8a2e-1634ece4747f" />
+                </generalization>
+              </generalsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="92608d26-53cb-4826-b007-b10de2e72060" name="Orange" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="e6b29155-3d72-4df1-9b46-a2b10b84ca5b" />
+              <generalsInternal>
+                <generalization Id="4009be2a-99e2-4dba-b1e5-703427a4ecc1" isSubstitutable="false">
+                  <classMoniker Id="6a8a9670-e9bb-4eec-abd7-4634c0b8d272" LastKnownName="FruitHiver" />
+                  <elementDefinition Id="5ccab3ca-fbc0-4fbd-97eb-a5c0ebd13fbc" />
+                </generalization>
+              </generalsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="1c980a16-fc5c-4c6e-9b77-6634cd6f96e3" name="SaladeFruit" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="4c4bb1a8-aedf-42de-a4fe-368dd042860c" />
+              <generalsInternal>
+                <generalization Id="87d3aec5-c54f-4ab9-8360-3f6685136503" isSubstitutable="false">
+                  <classMoniker Id="7c631bc4-1e5d-407b-af50-4ec40299e354" LastKnownName="ABSFruit" />
+                  <elementDefinition Id="e34d151e-0349-49f6-8e10-9b6177dfec3b" />
+                </generalization>
+              </generalsInternal>
+              <targetEnds>
+                <association Id="f1a64fb2-5321-413c-9ffa-2a483d4b4bab" isDerived="false" sourceEndRoleName="SaladeEte" targetEndRoleName="ABSFruit1" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="7c631bc4-1e5d-407b-af50-4ec40299e354" LastKnownName="ABSFruit" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="eefaac6a-ee29-4b1d-a8e7-0925541965b1" name="SaladeEte" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="6e360059-2a1a-41ac-8358-17a34b9b2f26" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="2f6648bc-aa8b-4ca6-9b5f-c8910878ee36" name="ABSFruit1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                        <elementDefinition Id="83884094-68f1-463a-abb2-62aeaf187699" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="9553aed8-7fff-4ec1-875e-6bc876da7110" />
+                </association>
+              </targetEnds>
+              <ownedOperationsInternal>
+                <operation Id="27aaa883-5dfb-4159-aae6-2ced0db2e0a6" name="createFruit" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="5cd83e2a-0868-4820-9e61-3002955ca5bc" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="7c631bc4-1e5d-407b-af50-4ec40299e354" name="ABSFruit" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="b3a7f2fa-3dbf-47c3-9963-401c630f2536" />
+              <ownedOperationsInternal>
+                <operation Id="3e3319f3-0257-4af5-ac6e-711dd2566591" name="ADD" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="473505be-26dc-4c45-b431-0de27bfceb0d" />
+                </operation>
+                <operation Id="83201e03-fd09-4607-9256-1582c5e6e522" name="Remove" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="91dba780-421b-4200-9fe9-bfe802d5f747" />
+                </operation>
+                <operation Id="767baa1e-4966-4d07-9d10-023bce1dbc56" name="createFruit" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="54117215-9b23-44ac-8cd4-cd65e4a62b30" />
+                </operation>
+                <operation Id="f93c3c60-42b7-4548-b03d-9448d643a5f9" name="getChild" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="bf44421d-0143-421f-9044-18169fbacff8" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="34cacad5-2582-4379-95ce-efed62513d59" name="Mandarine" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="4946320f-6968-40ed-a111-9e7ef7e825cf" />
+              <generalsInternal>
+                <generalization Id="6df29227-7d8b-449d-88e7-42a61560df43" isSubstitutable="false">
+                  <classMoniker Id="6a8a9670-e9bb-4eec-abd7-4634c0b8d272" LastKnownName="FruitHiver" />
+                  <elementDefinition Id="a93a658d-0c4c-40a5-8954-3086126eb9dd" />
+                </generalization>
+              </generalsInternal>
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <packageHasNamedElement>
+      <referencedType Id="d5c9cb6a-9e62-4d35-96be-f522e6e14c0d" name="class" isAbstract="false" isLeaf="false" cachedFullName="class">
+        <elementDefinition Id="a282484d-77cb-4970-a631-7d93ebb0a71b" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="fa7256c7-959b-46b2-9ba8-a25559d0c8f6" name="ModelingProject1">
+    <elementDefinition Id="a414921e-2ba1-4b08-a82e-a381a1b26c96" />
+    <profileInstances>
+      <packageHasProfileInstances Id="e093251f-ac9f-4bbd-b2bc-c92c8a35c457">
+        <profileInstance Id="3552accf-6f8d-4d30-aefb-6ca7a0e69f9e" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="b256f6de-2d4a-4b0d-a86f-b1a945004364">
+        <profileInstance Id="1f6e5592-9744-4034-9dbe-796d3d8fdb3f" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

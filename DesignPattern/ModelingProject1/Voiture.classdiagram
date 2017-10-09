@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="2fade022-e93f-4b36-b2e9-1ca2648a2409" name="Voiture" linkedPackageId="9518b5a5-a8c7-4599-89b7-204815f4773f" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="baacbf20-d633-43a7-bd7d-ed21a8d17fda">
+      <profileInstance Id="0adcf4ac-4b7f-4025-a2f5-c79ea001552a" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="bb509c4e-10a6-4184-9a24-9b4739393ac3">
+      <profileInstance Id="2f2a9e26-c699-47ff-a760-a606e011e802" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="387b1904-d667-4165-8199-c0387fd73a81" name="Factory">
+        <elementDefinition Id="43b870b5-6a01-4afe-a277-c5d4a6424b47" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="34dda007-e9ec-4242-b0b4-c0a23be7523e" name="FVoitureAir" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="cb694a2f-3e3e-498d-aa32-190d2f1545a4" />
+              <suppliersInternal>
+                <dependency Id="85afd06f-0f11-4ca8-9197-54a47a51db37">
+                  <classMoniker Id="f7298ad1-be43-4a75-84ea-cd0d1cdaa6ec" LastKnownName="NavAir" />
+                  <elementDefinition Id="c0a9499f-0ea3-4269-91a6-bce8c92f23d5" />
+                </dependency>
+                <dependency Id="c10abe8e-6ba0-4b9e-a8ee-613d45d6299c">
+                  <classMoniker Id="88eb1ec0-3272-41b0-9999-fbb20ef78e22" LastKnownName="PropAir" />
+                  <elementDefinition Id="b371bb85-8269-42b9-b73c-8ef8e86bd846" />
+                </dependency>
+              </suppliersInternal>
+              <generalsInternal>
+                <generalization Id="87a29241-0f9a-4555-9bcc-6a6c43f8480a" isSubstitutable="false">
+                  <classMoniker Id="b83ad1d6-be89-4573-b2ba-41ead244f51a" LastKnownName="ABSFVoiture" />
+                  <elementDefinition Id="f3215dc8-80c5-45b9-822e-f40bdca81e37" />
+                </generalization>
+              </generalsInternal>
+              <ownedOperationsInternal>
+                <operation Id="b699a780-6b7c-412d-9f96-3de5b5b55c4b" name="CreateNav" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="452ae0c9-cbb9-40c0-8637-c7ca148af30d" />
+                </operation>
+                <operation Id="32e8c0b7-dba8-4a99-b8ef-72ff00800049" name="CreateProp" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="e7cccce5-e4f4-4a0d-b3b0-b203c13e89e4" />
+                </operation>
+                <operation Id="7134d2b4-9da2-4ddd-99be-47f54a486d63" name="CreateVoiture" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="a63542e1-7e8f-4954-b9b2-b0f14c50cdbc" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="b83ad1d6-be89-4573-b2ba-41ead244f51a" name="ABSFVoiture" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="d514746e-8c55-4faa-974e-0b102a517272" />
+              <ownedOperationsInternal>
+                <operation Id="4f1598d6-0716-44ce-aa6d-97ee3e03d65a" name="CreateNav" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="c7cfa04c-f45b-40a5-b78b-ec2384ee3aa0" />
+                </operation>
+                <operation Id="9f7e1a3e-c220-43e2-a56d-696ba9e1afc2" name="CreateProp" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="a449c9b7-0965-4a0c-bca1-0261edf7a2d9" />
+                </operation>
+                <operation Id="a3d23efc-6314-42b3-a4cf-c5dd0a9d8910" name="CreateVoiture" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="0900dceb-6386-4b04-9dc7-bdf88c276060" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="f7298ad1-be43-4a75-84ea-cd0d1cdaa6ec" name="NavAir" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="081b0a71-f429-472f-bdcc-6ec780e8bcf0" />
+              <generalsInternal>
+                <generalization Id="189a162f-e89a-4fe3-9ade-b1b0cebc9a1a" isSubstitutable="false">
+                  <classMoniker Id="bb14ee3f-75ca-4bfc-aae4-6824a2483f6e" LastKnownName="ABSNav" />
+                  <elementDefinition Id="6218c816-31da-482e-b33f-a5d578a5e31b" />
+                </generalization>
+              </generalsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="5a42b20a-38d6-4c07-a16c-38f8f951fbc7" name="NavEau" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="80c817e4-248c-4c59-9201-5c577dc9c9d4" />
+              <generalsInternal>
+                <generalization Id="396f2036-e0c5-4d28-b7cc-ea3f2b74f365" isSubstitutable="false">
+                  <classMoniker Id="bb14ee3f-75ca-4bfc-aae4-6824a2483f6e" LastKnownName="ABSNav" />
+                  <elementDefinition Id="c2575e31-2f39-4a4c-bf26-1cf2568be83c" />
+                </generalization>
+              </generalsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="bb14ee3f-75ca-4bfc-aae4-6824a2483f6e" name="ABSNav" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="ce2e3411-7d66-423b-9f30-da1a0b7cf441" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="98a70a5b-bfc9-47c0-b3d5-040a19aa7f7a" name="FVoitureEau" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="355fe181-ec79-4666-9658-11015cd20e2e" />
+              <suppliersInternal>
+                <dependency Id="9582cb6d-c8b4-4f5d-b3f6-4474a7b0d3b9">
+                  <classMoniker Id="5a42b20a-38d6-4c07-a16c-38f8f951fbc7" LastKnownName="NavEau" />
+                  <elementDefinition Id="c017b02a-dd2f-4820-bb0c-472ee65d210d" />
+                </dependency>
+                <dependency Id="68155246-b96d-4f6b-9dc2-507490a0ca53">
+                  <classMoniker Id="fc371f68-31bf-4e03-a174-8ab3f2bdf8d7" LastKnownName="PropEau" />
+                  <elementDefinition Id="c07f68be-8f30-4be2-b2cf-79b26cddb3cb" />
+                </dependency>
+              </suppliersInternal>
+              <generalsInternal>
+                <generalization Id="f64e66cf-24e4-4825-8707-5dec608a55b0" isSubstitutable="false">
+                  <classMoniker Id="b83ad1d6-be89-4573-b2ba-41ead244f51a" LastKnownName="ABSFVoiture" />
+                  <elementDefinition Id="960a6105-8f6e-4942-91bb-27a37f2395a4" />
+                </generalization>
+              </generalsInternal>
+              <ownedOperationsInternal>
+                <operation Id="95ca46e1-07ff-49dc-b023-2e18f2ac2c08" name="CreateNav" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="1003617c-518f-4d9c-a3b7-98978921fef4" />
+                </operation>
+                <operation Id="763777ed-8f4c-4229-9f29-eb444ac3fd9b" name="CreateProp" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="e947f5dd-e7cb-47c7-9213-8bcd22050a85" />
+                </operation>
+                <operation Id="6e5d69f2-e67d-492c-b5ed-785d52b371d1" name="CreateVoiture" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="27bcc68f-1784-4f35-b9eb-4e408f5ed8d9" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="01613c04-7573-489d-8642-ed3db4cd5f95" name="ABSProp" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="06ca3b9d-5026-4d4e-81c4-f86497801560" />
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="88eb1ec0-3272-41b0-9999-fbb20ef78e22" name="PropAir" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="4e87bb8c-640d-4c81-8b82-7269b89c2d96" />
+              <generalsInternal>
+                <generalization Id="3fad8247-3065-4d83-a55f-5b6fce1d8151" isSubstitutable="false">
+                  <classMoniker Id="01613c04-7573-489d-8642-ed3db4cd5f95" LastKnownName="ABSProp" />
+                  <elementDefinition Id="e2e3d583-24f8-4148-aab7-c696587550cb" />
+                </generalization>
+              </generalsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="fc371f68-31bf-4e03-a174-8ab3f2bdf8d7" name="PropEau" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="d0584c38-56c2-4ac0-b095-80be057b1e51" />
+              <generalsInternal>
+                <generalization Id="ddc0cd91-a327-4b31-815b-92b054265a1a" isSubstitutable="false">
+                  <classMoniker Id="01613c04-7573-489d-8642-ed3db4cd5f95" LastKnownName="ABSProp" />
+                  <elementDefinition Id="2c176785-d7cd-4b35-8dd5-359508123097" />
+                </generalization>
+              </generalsInternal>
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+  </packagedElements>
+  <package Id="9518b5a5-a8c7-4599-89b7-204815f4773f" name="ModelingProject1">
+    <elementDefinition Id="a414921e-2ba1-4b08-a82e-a381a1b26c96" />
+  </package>
+</logicalClassDesignerModel>

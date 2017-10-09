@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="498371ba-1b21-4643-a050-4ae50d1a2fa5" name="ArmeeChats" linkedPackageId="63ea0045-b81a-47d9-a4f6-159b612229c8" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="4884abc8-b31a-46b9-b04f-67333971874d">
+      <profileInstance Id="e322fe32-7fb1-4b0d-8246-3a896d100ba7" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="4add255c-a0dd-4d79-812c-66b7acc255d1">
+      <profileInstance Id="5c051629-0ea3-4949-9580-a05ab41bed71" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="2de3aeee-8c97-44d0-b1d5-a3a24e5613a6" name="Package1">
+        <ownedCommentsInternal>
+          <comment Id="38da46cf-ff93-4fca-83ec-3d927ecab446">
+            <elementDefinition Id="38b54d00-8364-4825-a82f-726497286313" />
+            <body>Dans la methode CreationChat de Arme
+Chat c = this.clone();
+c.nbTete(2);</body>
+          </comment>
+        </ownedCommentsInternal>
+        <elementDefinition Id="afeda507-c908-45a9-8fc0-60285a728f06" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="6ec5f324-7e14-4ae7-8bda-3a9d60acfccc" name="Chat" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="b5e82553-7702-4628-8f55-48a66eab8b5b" />
+              <ownedAttributesInternal>
+                <property Id="babd8c3a-222c-4fb6-9918-6c94ef22fd6e" name="tete" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8dd72122-23d3-4a3d-9d39-5ff69f9a7896" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="ae24f974-b612-47b0-9d1b-ebe4cf058944" LastKnownName="int" />
+                  </type_NamedElement>
+                </property>
+              </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="f3b9b6c8-c3d2-4f5e-af7b-4e234545c5f4" name="clone" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="869a83d1-f897-4fd2-9600-16eedce98619" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="210e01a7-17e1-4322-a17b-f3bd78d17a34" name="ChatDeuxTete" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="9374622b-59a3-4c7e-a416-3c8a94dff9d9" />
+              <generalsInternal>
+                <generalization Id="e284191c-70a5-4aab-b707-7638c2ba8a29" isSubstitutable="false">
+                  <classMoniker Id="6ec5f324-7e14-4ae7-8bda-3a9d60acfccc" LastKnownName="Chat" />
+                  <elementDefinition Id="e44ee54e-8373-41a7-9c88-cc9367d9c10d" />
+                </generalization>
+              </generalsInternal>
+              <ownedOperationsInternal>
+                <operation Id="3a4b14f4-6fcc-4853-a824-c77426b0181f" name="clone" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="2f5d2946-1ea4-433e-a726-51eaf84902eb" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="cb7ac64e-9198-4208-8a55-fa705ca0d638" name="Armee" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="6752edbf-aae0-477d-9dfe-1d77637125be" />
+              <targetEnds>
+                <association Id="2cdad9b8-611e-471a-ba40-7a87149d67e4" isDerived="false" sourceEndRoleName="Armee" targetEndRoleName="ChatSoldat" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="6ec5f324-7e14-4ae7-8bda-3a9d60acfccc" LastKnownName="Chat" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="6a30735f-51d9-42d5-82ab-011436da07c8" name="Armee" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="2b4f9b55-2d5c-447e-90bf-3b5598a4bff3" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="8e373dbc-fe3d-4a4f-bc1c-6bd771457deb" name="ChatSoldat" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <lowerValueInternal>
+                          <literalString Id="eabdbd10-ce55-4b00-b6ae-60f44e3d4e68" name="Lower" value="*">
+                            <elementDefinition Id="7d49c2ea-afc0-4229-853f-6f8351a0ea61" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="3d2d90c6-0f5f-4265-9613-9e8cd6120b1d" name="Upper" value="0">
+                            <elementDefinition Id="6cf925ea-a4c2-4329-aca2-782bd5aa7152" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="3bc9cf9a-eb1a-4f05-95e9-7b2e4edbde60" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="d3e08b97-3aa0-4534-ac19-72f919bcff45" />
+                </association>
+              </targetEnds>
+              <ownedAttributesInternal>
+                <property Id="ebcb8ef5-0449-4d88-907a-857c117f5689" name="instance" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="59d1bd08-bd8f-4ee3-8423-d4b87159ce43" />
+                </property>
+              </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="ea26a21f-ef92-47d1-a752-c4abf157fa6f" name="getInstance" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="11d10873-28e0-45f3-ad3d-b1198de13131" />
+                </operation>
+                <operation Id="cd682e3c-38f2-4ac3-b370-a30ba5a9b39f" name="Arme" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="1d563155-724e-4191-88fe-834fc3709d16" />
+                </operation>
+                <operation Id="47f9124a-b6d8-4f08-9164-238e720af17e" name="CreationChat" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="75f1f37e-9d16-428f-a53a-d081f52fd889" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <packageHasNamedElement>
+      <referencedType Id="ae24f974-b612-47b0-9d1b-ebe4cf058944" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
+        <elementDefinition Id="d872a9aa-6b1c-45d6-a26c-14dc15e57fd3" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="63ea0045-b81a-47d9-a4f6-159b612229c8" name="ModelingProject1">
+    <elementDefinition Id="a414921e-2ba1-4b08-a82e-a381a1b26c96" />
+  </package>
+</logicalClassDesignerModel>
